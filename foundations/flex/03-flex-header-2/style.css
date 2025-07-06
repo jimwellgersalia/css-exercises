@@ -13,8 +13,8 @@ body {
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
   padding: 8px;
 }
 
@@ -60,14 +60,8 @@ ul {
   padding-left: 0;
 }
 
-.notifications { /*the button class*/
-  margin-left: auto; /* use to push the notification button to the left side along the following items*/
+.left-side, .right-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
-
-/* 
-The odin solution is to add another div, div on left where is the logo and the links resides.
-And for the right div is the notification and the profile image.
-now the header will contain a justify-content: space-between to add spaces on the left and the right side 
-using space between the right div will be push to the right side because of the space. allowing it to resize */
-
-/* But my solution also works well. because the margin left auto will behave a spacer also in the flex item */
