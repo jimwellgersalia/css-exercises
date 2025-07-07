@@ -36,5 +36,5 @@ img {
 
 .content {
   width: 200px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
